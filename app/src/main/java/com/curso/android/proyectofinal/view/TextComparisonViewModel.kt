@@ -11,10 +11,16 @@ class TextComparisonViewModel : ViewModel() {
 
     fun compareTexts(model: TextsToCompare) {
         val areTextsEqual = model.text1 == model.text2
-        _resultText.value = if (areTextsEqual) {
-            "Los textos son iguales."
-        } else {
-            "Los textos no son iguales."
+        val areTextsEmpty = model.text1.isEmpty() || model.text2.isEmpty()
+
+        _resultText.value = if (areTextsEmpty){
+            "Debes completar los campos."
+        }else {
+            if (areTextsEqual) {
+                "Los textos son iguales."
+            } else {
+                "Los textos no son iguales."
+            }
         }
     }
 }
