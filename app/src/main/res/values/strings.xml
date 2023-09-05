@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="labelTextIput1">Ingresar primer texto a comparar</string>
+    <string name="labelTextInput1">Ingresa el texto a comparar</string>
+    <string name="labelTextInput2">Ingresa el texto con el que vas a comparar</string>
+    <string name="button">Comparar</string>
+    <string name="textviewResult">Resultado:</string>
+</resources>
