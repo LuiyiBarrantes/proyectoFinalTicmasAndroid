@@ -9,6 +9,26 @@
     app:layoutDescription="@xml/activity_main_scene"
     tools:context=".view.MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="254dp"
+        android:layout_height="54dp"
+        android:paddingTop="20px"
+        android:text="@string/titleTextView"
+        android:textAlignment="center"
+        android:textColor="#D8E5EF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -59,6 +79,7 @@
 
         android:layout_marginBottom="48dp"
         android:text="@string/textviewResult"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
